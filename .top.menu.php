@@ -2,7 +2,7 @@
 $aMenuLinks = Array(
 	Array(
 		"Главная", 
-		"/main/", 
+		"/", 
 		Array(), 
 		Array(), 
 		"" 
@@ -33,14 +33,14 @@ $aMenuLinks = Array(
 		"/personal-cabinet-salesman/", 
 		Array(), 
 		Array(), 
-		"" 
+		"CSite::InGroup(array(1,7,8,5))" 
 	),
 	Array(
 		"Личный кабинет", 
 		"/personal-cabinet-buyer/", 
 		Array(), 
 		Array(), 
-		"" 
+		"CSite::InGroup(array(1,6,8,5))" 
 	)
 );
 ?>

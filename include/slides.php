@@ -1,30 +1,20 @@
-<div class="slide-one-item home-slider owl-carousel">
 
-      <div class="site-blocks-cover" style="background-image: url(/local/templates/home/images/hero_bg_1.jpg);" data-aos="fade" data-stellar-background-ratio="0.5">
-
-        <div class="text">
-          <h2>853 S Lucerne Blvd</h2>
-          <p class="location"><span class="property-icon icon-room"></span> Los Angeles, CA 90005</p>
-          <p class="mb-2"><strong>$2,250,500</strong></p>
-          
-          
-          <p class="mb-0"><a href="#" class="text-uppercase small letter-spacing-1 font-weight-bold">More Details</a></p>
-          
-        </div>
-      </div>  
-
-      <div class="site-blocks-cover" style="background-image: url(/local/templates/home/images/hero_bg_3.jpg);" data-aos="fade" data-stellar-background-ratio="0.5">
-
-        <div class="text">
-          <h2>625 S. Berendo St</h2>
-          <p class="location"><span class="property-icon icon-room"></span>607 Los Angeles, CA 90005</p>
-          <p class="mb-2"><strong>$2,250,500</strong></p>
-          
-          
-          <p class="mb-0"><a href="#" class="text-uppercase small letter-spacing-1 font-weight-bold">More Details</a></p>
-          
-        </div>
-        
-      </div>  
-
-    </div>
+<?$APPLICATION->IncludeComponent(
+	"bitrix:news.line",
+	"slider",
+	Array(
+		"ACTIVE_DATE_FORMAT" => "d.m.Y",
+		"CACHE_GROUPS" => "Y",
+		"CACHE_TIME" => "300",
+		"CACHE_TYPE" => "A",
+		"DETAIL_URL" => "",
+		"FIELD_CODE" => array("NAME","PREVIEW_TEXT",""),
+		"IBLOCKS" => array("5"),
+		"IBLOCK_TYPE" => "Ads",
+		"NEWS_COUNT" => "10",
+		"SORT_BY1" => "ACTIVE_FROM",
+		"SORT_BY2" => "SORT",
+		"SORT_ORDER1" => "DESC",
+		"SORT_ORDER2" => "ASC"
+	)
+);?><br>

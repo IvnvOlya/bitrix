@@ -1,8 +1,8 @@
- <div class="container">
+<div class="container">
       <div class="row mb-5 justify-content-center">
         <div class="col-md-7">
           <div class="site-section-title text-center">
-            <h2>Our Agents</h2>
+            <h2>Наши агенты</h2>
           </div>
         </div>
       </div>

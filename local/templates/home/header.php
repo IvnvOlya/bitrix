@@ -25,8 +25,8 @@ IncludeTemplateLangFile(__FILE__);
     Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . "/css/bootstrap-datepicker.css");
     Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . "/css/mediaelementplayer.css");
     Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . "/css/animate.css");
-    Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . "/css/flaticon/font/flaticon.css");
-    Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . "/css/fl-bigmug-line.csss");
+    Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . "/fonts/flaticon/font/flaticon.css");
+    Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . "/css/fl-bigmug-line.css");
     Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . "/css/aos.css");
     Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . "/css/style.css");
 
@@ -101,7 +101,6 @@ IncludeTemplateLangFile(__FILE__);
 		"PATH" => "/include/icons.php"
 	      )
               );?>
-          
         </div>
       </div>
       
@@ -125,8 +124,7 @@ IncludeTemplateLangFile(__FILE__);
             </div>
             <div class="col-4 col-md-4 col-lg-8">
               <nav class="site-navigation text-right text-md-right" role="navigation">
-
-                <div class="d-inline-block d-lg-none ml-md-0 mr-auto py-3"><a href="#" class="site-menu-toggle js-menu-toggle text-black"><span class="icon-menu h3"></span></a></div>
+               <div class="d-inline-block d-lg-none ml-md-0 mr-auto py-3"><a href="#" class="site-menu-toggle js-menu-toggle text-black"><span class="icon-menu h3"></span></a></div>
 
                 <?$APPLICATION->IncludeComponent(
                     "bitrix:main.include",
@@ -144,119 +142,14 @@ IncludeTemplateLangFile(__FILE__);
         </div>
       </div>
   </div>
-
-    <?$APPLICATION->IncludeComponent(
-        "bitrix:main.include",
-        "",
-        Array(
-        "AREA_FILE_SHOW" => "file",
-        "AREA_FILE_SUFFIX" => "inc",
-        "EDIT_TEMPLATE" => "",
-        "PATH" => "/include/slides.php"
-        )
-    );?>
-
-    <div class="py-5">
-      <div class="container">
-
-        <div class="row">
-          <div class="col-md-6 col-lg-4 mb-3 mb-lg-0">
-            <div class="feature d-flex align-items-start">
-              <span class="icon mr-3 flaticon-house"></span>
-              <?$APPLICATION->IncludeComponent(
-                "bitrix:main.include",
-                "",
-                Array(
-                "AREA_FILE_SHOW" => "file",
-                "AREA_FILE_SUFFIX" => "inc",
-                "EDIT_TEMPLATE" => "",
-                "PATH" => "/include/cell_1.php"
-                )
-            );?>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 mb-3 mb-lg-0">
-            <div class="feature d-flex align-items-start">
-              <span class="icon mr-3 flaticon-rent"></span>
-              <?$APPLICATION->IncludeComponent(
-                "bitrix:main.include",
-                "",
-                Array(
-                "AREA_FILE_SHOW" => "file",
-                "AREA_FILE_SUFFIX" => "inc",
-                "EDIT_TEMPLATE" => "",
-                "PATH" => "/include/cell_2.php"
-                )
-            );?>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 mb-3 mb-lg-0">
-            <div class="feature d-flex align-items-start">
-              <span class="icon mr-3 flaticon-location"></span>
-              <?$APPLICATION->IncludeComponent(
-                "bitrix:main.include",
-                "",
-                Array(
-                "AREA_FILE_SHOW" => "file",
-                "AREA_FILE_SUFFIX" => "inc",
-                "EDIT_TEMPLATE" => "",
-                "PATH" => "/include/cell_3.php"
-                )
-            );?>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
- 
-    <div class="site-section site-section-sm bg-light">
-        <?$APPLICATION->IncludeComponent(
-                "bitrix:main.include",
-                "",
-                Array(
-                "AREA_FILE_SHOW" => "file",
-                "AREA_FILE_SUFFIX" => "inc",
-                "EDIT_TEMPLATE" => "",
-                "PATH" => "/include/properties.php"
-                )
-            );?>
-    </div>
-
-    <div class="site-section">
-        <?$APPLICATION->IncludeComponent(
-                "bitrix:main.include",
-                "",
-                Array(
-                "AREA_FILE_SHOW" => "file",
-                "AREA_FILE_SUFFIX" => "inc",
-                "EDIT_TEMPLATE" => "",
-                "PATH" => "/include/services.php"
-                )
-            );?>
-    </div>
-
-    <div class="site-section bg-light">
-            <?$APPLICATION->IncludeComponent(
-                "bitrix:main.include",
-                "",
-                Array(
-                "AREA_FILE_SHOW" => "file",
-                "AREA_FILE_SUFFIX" => "inc",
-                "EDIT_TEMPLATE" => "",
-                "PATH" => "/include/blog.php"
-                )
-            );?>
-    </div>
-    
-    <div class="site-section">
-    <?$APPLICATION->IncludeComponent(
-                "bitrix:main.include",
-                "",
-                Array(
-                "AREA_FILE_SHOW" => "file",
-                "AREA_FILE_SUFFIX" => "inc",
-                "EDIT_TEMPLATE" => "",
-                "PATH" => "/include/agents.php"
-                )
-            );?>
-    </div>
+<?$APPLICATION->IncludeComponent("bitrix:main.include", "", array(
+	"AREA_FILE_SHOW" => "file",
+		"AREA_FILE_SUFFIX" => "inc",
+		"EDIT_TEMPLATE" => "",
+		"PATH" => "/include/about.php"
+	),
+	false,
+	array(
+	"ACTIVE_COMPONENT" => "N"
+	)
+);?>
