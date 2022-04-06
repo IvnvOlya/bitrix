@@ -142,7 +142,8 @@ IncludeTemplateLangFile(__FILE__);
         </div>
       </div>
   </div>
-<?$APPLICATION->IncludeComponent("bitrix:main.include", "", array(
+
+      <?$APPLICATION->IncludeComponent("bitrix:main.include", "", array(
 	"AREA_FILE_SHOW" => "file",
 		"AREA_FILE_SUFFIX" => "inc",
 		"EDIT_TEMPLATE" => "",
@@ -150,6 +151,6 @@ IncludeTemplateLangFile(__FILE__);
 	),
 	false,
 	array(
-	"ACTIVE_COMPONENT" => "N"
+	"ACTIVE_COMPONENT" => "Y"
 	)
 );?>

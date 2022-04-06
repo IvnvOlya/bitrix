@@ -22,13 +22,6 @@ $aMenuLinks = Array(
 		"" 
 	),
 	Array(
-		"Новости", 
-		"/services/news/", 
-		Array(), 
-		Array(), 
-		"" 
-	),
-	Array(
 		"Личный кабинет", 
 		"/personal-cabinet-salesman/", 
 		Array(), 
